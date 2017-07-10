@@ -2,6 +2,7 @@ package com.thriftyclient;
 
 import com.thriftyclient.gen.PersonService;
 import com.thriftyclient.gen.Person;
+import org.apache.thrift.TException;
 
 public class ThriftyClient{
 
@@ -11,7 +12,7 @@ public class ThriftyClient{
     this.client = client;
   }
 
-  public Person getPerson(){
+  public Person getPerson() throws TException {
     return this.client.get();
   }
 }
