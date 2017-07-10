@@ -4,7 +4,7 @@
  * DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
  *  @generated
  */
-package com.thriftyclient.gen;
+package com.thrifty.gen;
 
 @SuppressWarnings({"cast", "rawtypes", "serial", "unchecked", "unused"})
 /**
@@ -25,7 +25,7 @@ public class Person implements org.apache.thrift.TBase<Person, Person._Fields>, 
   public java.lang.String givenName; // required
   public java.lang.String surname; // required
   public byte age; // required
-  public com.thriftyclient.gen.Address address; // required
+  public com.thrifty.gen.Address address; // required
 
   /** The set of fields this struct contains, along with convenience methods for finding and manipulating them. */
   public enum _Fields implements org.apache.thrift.TFieldIdEnum {
@@ -107,7 +107,7 @@ public class Person implements org.apache.thrift.TBase<Person, Person._Fields>, 
     tmpMap.put(_Fields.AGE, new org.apache.thrift.meta_data.FieldMetaData("age", org.apache.thrift.TFieldRequirementType.DEFAULT, 
         new org.apache.thrift.meta_data.FieldValueMetaData(org.apache.thrift.protocol.TType.BYTE)));
     tmpMap.put(_Fields.ADDRESS, new org.apache.thrift.meta_data.FieldMetaData("address", org.apache.thrift.TFieldRequirementType.DEFAULT, 
-        new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.thriftyclient.gen.Address.class)));
+        new org.apache.thrift.meta_data.StructMetaData(org.apache.thrift.protocol.TType.STRUCT, com.thrifty.gen.Address.class)));
     metaDataMap = java.util.Collections.unmodifiableMap(tmpMap);
     org.apache.thrift.meta_data.FieldMetaData.addStructMetaDataMap(Person.class, metaDataMap);
   }
@@ -119,7 +119,7 @@ public class Person implements org.apache.thrift.TBase<Person, Person._Fields>, 
     java.lang.String givenName,
     java.lang.String surname,
     byte age,
-    com.thriftyclient.gen.Address address)
+    com.thrifty.gen.Address address)
   {
     this();
     this.givenName = givenName;
@@ -142,7 +142,7 @@ public class Person implements org.apache.thrift.TBase<Person, Person._Fields>, 
     }
     this.age = other.age;
     if (other.isSetAddress()) {
-      this.address = new com.thriftyclient.gen.Address(other.address);
+      this.address = new com.thrifty.gen.Address(other.address);
     }
   }
 
@@ -230,11 +230,11 @@ public class Person implements org.apache.thrift.TBase<Person, Person._Fields>, 
     __isset_bitfield = org.apache.thrift.EncodingUtils.setBit(__isset_bitfield, __AGE_ISSET_ID, value);
   }
 
-  public com.thriftyclient.gen.Address getAddress() {
+  public com.thrifty.gen.Address getAddress() {
     return this.address;
   }
 
-  public Person setAddress(com.thriftyclient.gen.Address address) {
+  public Person setAddress(com.thrifty.gen.Address address) {
     this.address = address;
     return this;
   }
@@ -284,7 +284,7 @@ public class Person implements org.apache.thrift.TBase<Person, Person._Fields>, 
       if (value == null) {
         unsetAddress();
       } else {
-        setAddress((com.thriftyclient.gen.Address)value);
+        setAddress((com.thrifty.gen.Address)value);
       }
       break;
 
@@ -572,7 +572,7 @@ public class Person implements org.apache.thrift.TBase<Person, Person._Fields>, 
             break;
           case 4: // ADDRESS
             if (schemeField.type == org.apache.thrift.protocol.TType.STRUCT) {
-              struct.address = new com.thriftyclient.gen.Address();
+              struct.address = new com.thrifty.gen.Address();
               struct.address.read(iprot);
               struct.setAddressIsSet(true);
             } else { 
@@ -674,7 +674,7 @@ public class Person implements org.apache.thrift.TBase<Person, Person._Fields>, 
         struct.setAgeIsSet(true);
       }
       if (incoming.get(3)) {
-        struct.address = new com.thriftyclient.gen.Address();
+        struct.address = new com.thrifty.gen.Address();
         struct.address.read(iprot);
         struct.setAddressIsSet(true);
       }

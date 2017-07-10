@@ -1,7 +1,7 @@
 package com.thriftyclient;
 
-import com.thriftyclient.gen.PersonService;
-import com.thriftyclient.gen.Person;
+import com.thrifty.gen.PersonService;
+import com.thrifty.gen.Person;
 import org.apache.thrift.TException;
 
 public class ThriftyClient{

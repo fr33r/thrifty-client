@@ -1,12 +1,12 @@
 package com.thriftyclient;
 
-import com.thriftyclient.gen.Person;
+import com.thrifty.gen.Person;
 import org.apache.thrift.TException;
 import org.apache.thrift.protocol.TProtocol;
 import org.apache.thrift.protocol.TSimpleJSONProtocol;
 import org.apache.thrift.transport.TSocket;
 import org.apache.thrift.transport.TTransport;
-import com.thriftyclient.gen.PersonService;
+import com.thrifty.gen.PersonService;
 import org.apache.thrift.transport.TTransportException;
 
 public class App{
